@@ -195,10 +195,6 @@ p{
             margin-bottom:1em;
         }
 
-        span{
-            margin-top:1em;
-        }
-
         .photo-grid{
             width:100%;
             display:grid;
@@ -347,7 +343,7 @@ footer{
     }   
 
     .footage{
-        grid-template-columns: 15vw 85vw;
+        grid-template-columns: 20vw 85vw;
         position:relative;
 
         .col-right{
