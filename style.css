@@ -1,0 +1,469 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  margin-bottom: 5em;
+  line-height: 1.35em;
+}
+
+.intro {
+  height: 704px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20vw 60vw 20vw;
+      grid-template-columns: 20vw 60vw 20vw;
+}
+
+.intro .icon {
+  position: absolute;
+  left: 10vw;
+  background: black;
+  font-size: 1.625rem;
+  color: white;
+  padding: 0 0.75rem;
+}
+
+.intro .icon span {
+  color: #7988BE;
+}
+
+.intro nav {
+  position: absolute;
+  background: #363B4E;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  text-align: right;
+  padding: 2.81rem;
+  -webkit-clip-path: circle(0% at 100% 0%);
+          clip-path: circle(0% at 100% 0%);
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+}
+
+.intro nav.open {
+  -webkit-clip-path: circle(150% at 100% 0%);
+          clip-path: circle(150% at 100% 0%);
+}
+
+.intro nav img {
+  margin-bottom: 2.75rem;
+}
+
+.intro nav img:hover {
+  cursor: pointer;
+}
+
+.intro nav ul {
+  list-style: none;
+}
+
+.intro nav ul li {
+  font-size: 1.56rem;
+  margin-bottom: 0.65em;
+}
+
+.intro nav a {
+  color: white;
+  text-decoration: none;
+  font-family: "Bebas Neue";
+  position: relative;
+}
+
+.intro nav a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 3px;
+  width: 100%;
+  background: white;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.intro nav a:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.intro .col-left {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  background-color: #B2DD9E;
+  background-image: url("../Images/lightsIntro.jpg");
+  background-size: cover;
+  background-blend-mode: screen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 1.125rem;
+}
+
+.intro .col-left h1 {
+  font-size: 3.06rem;
+  line-height: 1em;
+  margin-bottom: 0.57em;
+}
+
+.intro .col-left img {
+  width: 40vw;
+}
+
+.intro .col-right {
+  background: #7988BE;
+  padding: 1.125rem 0.9rem;
+}
+
+.intro .col-right img:hover {
+  cursor: pointer;
+}
+
+.stadium {
+  height: 595px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20vw 80vw;
+      grid-template-columns: 20vw 80vw;
+}
+
+.stadium .col-right {
+  font-family: "Bebas Neue";
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  padding: 3.8125rem 2.5625rem;
+  background-image: url("../Images/droneChampionship.jpg");
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  color: white;
+}
+
+.stadium .col-right::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #303853;
+  opacity: 0.83;
+}
+
+.stadium .col-right h3 {
+  font-size: 1.25rem;
+  margin-bottom: 3.5em;
+}
+
+.stadium .col-right .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stadium .col-right .person .stick {
+  height: 1px;
+  background: white;
+  width: 1.25em;
+  margin-right: 0.35em;
+}
+
+.stadium .col-right .person h2 {
+  font-size: 1.125rem;
+}
+
+.footage {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20vw 80vw;
+      grid-template-columns: 20vw 80vw;
+  margin-top: 3.31rem;
+}
+
+.footage .col-right {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.footage .col-right h1 {
+  font-size: 2.25rem;
+  margin-bottom: 1em;
+}
+
+.footage .col-right span {
+  margin-top: 1em;
+}
+
+.footage .col-right .photo-grid {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (117px)[3];
+      grid-template-columns: repeat(3, 117px);
+  grid-gap: 0px;
+}
+
+.footage .col-right .photo-grid img {
+  width: 117px;
+  height: 117px;
+}
+
+.footage .col-right .photo-grid img:nth-child(1) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.footage .col-right .photo-grid img:nth-child(5) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+footer {
+  width: 100vw;
+  height: 651px;
+  background: #B2DD9E;
+  margin-top: 2.125rem;
+}
+
+footer .register {
+  background: #9FC88C;
+  width: 90vw;
+  font-size: 36px;
+  padding: 0.8em 0 0.75em 1.75em;
+}
+
+footer .form {
+  padding: 2.4375rem 3.9375rem;
+  font-size: 1.5rem;
+}
+
+footer .form input {
+  width: 100%;
+  height: 52px;
+  margin-bottom: 1.25em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  padding: 0.5em;
+}
+
+footer .form button {
+  background: black;
+  width: 100%;
+  font-family: "Bebas Neue";
+  color: white;
+  border: none;
+  font-size: 2.125rem;
+  padding: 0.317em 0;
+}
+
+footer .form button:hover {
+  cursor: pointer;
+  background: #585858;
+}
+
+footer .form .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2.3125rem;
+}
+
+footer .form .contacts p {
+  margin: 0;
+  line-height: 2rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .hamburger {
+    display: none;
+  }
+  .intro {
+    -ms-grid-columns: 20vw 50vw 30vw;
+        grid-template-columns: 20vw 50vw 30vw;
+  }
+  .intro .nav-links {
+    -webkit-clip-path: circle(150% at 0% 0%);
+            clip-path: circle(150% at 0% 0%);
+    height: 100px;
+    position: absolute;
+    left: 60vw;
+    top: 0;
+    width: 30vw;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+  .intro .nav-links .close-nav {
+    display: none;
+  }
+  .intro .nav-links ul {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .intro .col-left {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80vw;
+  }
+  .intro .col-left .text-intro {
+    position: absolute;
+    width: 34vw;
+    left: 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    top: 20vh;
+  }
+  .intro .col-left .text-intro h1 {
+    font-size: 6.0625rem;
+  }
+  .intro .col-left img {
+    z-index: 3;
+    margin-left: 15rem;
+  }
+  .stadium .col-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5.75rem 10rem;
+  }
+  .stadium .col-right h3 {
+    font-size: 3.375rem;
+    margin-bottom: 1em;
+  }
+  .stadium .col-right .person {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .footage {
+    -ms-grid-columns: 15vw 85vw;
+        grid-template-columns: 15vw 85vw;
+    position: relative;
+  }
+  .footage .col-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footage .col-right .footage-text {
+    width: 40%;
+  }
+  .footage .col-right .footage-text h1 {
+    font-size: 5.06rem;
+    line-height: 5.5rem;
+    margin-bottom: 2rem;
+  }
+  .footage .col-right .footage-text p {
+    width: 95%;
+  }
+  .footage .col-right .photo-grid {
+    width: 45%;
+    margin-bottom: 0;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .footage .col-right .photo-grid img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer {
+    margin-top: 0;
+  }
+  footer .register {
+    max-width: 711px;
+    padding-left: 15vw;
+  }
+  footer .form {
+    padding-left: 15vw;
+    position: relative;
+  }
+  footer .form input {
+    max-width: 634px;
+  }
+  footer .form button {
+    margin-top: 3rem;
+    max-width: 634px;
+    height: 5.8125rem;
+    padding: 0;
+  }
+  footer .form .contacts {
+    position: absolute;
+    left: 75%;
+    top: 7.5%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
