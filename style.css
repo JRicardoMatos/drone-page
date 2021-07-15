@@ -107,7 +107,7 @@ p {
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   background-color: #B2DD9E;
-  background-image: url("../Images/lightsIntro.jpg");
+  background-image: url("./lightsIntro.jpg");
   background-size: cover;
   background-blend-mode: screen;
   display: -webkit-box;
@@ -160,7 +160,7 @@ p {
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   padding: 3.8125rem 2.5625rem;
-  background-image: url("../Images/droneChampionship.jpg");
+  background-image: url("./droneChampionship.jpg");
   background-size: cover;
   position: relative;
   z-index: 0;
